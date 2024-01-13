@@ -9,22 +9,78 @@
 body {
     background-color: #151515;
 }
+
+@media screen and (min-width: 767px){
+    
+    .card {
+        width: 75%;
+        max-width: 350px;
+        background: linear-gradient(135deg, #6091e5, #960b0b);
+        color: #fff;
+        margin: 100px auto 0;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        padding: 40px 35px;
+        text-align: center;
+    }
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 25px;
+        height: 60px;
+        border-radius: 30px;
+        flex: 0.8;
+        margin-right: 16px;
+        font-size: 18px;
+    }
+
+    .search button {
+        border: 0;
+        outline: 0;
+        background: none;
+        cursor: pointer;
+        color: #ebfffc;
+        
+    }
+
+}
+
+@media screen and (max-width: 560px){
+    .search button {
+        display: none;
+        border: 0;
+        outline: 0;
+        background: none;
+        cursor: pointer;
+        color: #ebfffc;
+    }
+}
+
 .card {
-    width: 75%;
-    max-width: 470px;
+    width: 85%;
+    max-width: 350px;
     background: linear-gradient(135deg, #6091e5, #960b0b);
     color: #fff;
     margin: 100px auto 0;
     margin-bottom: 100px;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 40px 40px;
     text-align: center;
 }
 .search {
-    width: 100%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.search button {
+    border: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    color: #ebfffc;
 }
 
 .search input {
@@ -35,20 +91,11 @@ body {
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
-    flex: 1;
     margin-right: 16px;
     font-size: 18px;
 }
 
-.search button {
-    border: 0;
-    outline: 0;
-    background: none;
-    cursor: pointer;
-    color: #ebfffc;
-    
 
-}
 .search button i {
     font-size: 30px;
 }
@@ -78,13 +125,13 @@ body {
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 40px;
+    margin-left: 20px;
 }
 .details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
     margin-top: 50px;
 }
 .col {
@@ -97,8 +144,9 @@ body {
 }
 
 .humidity, .wind {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: -5px;
-    font-weight: 700;
+    font-weight: 200;
+    
 
 }
