@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Today Weather</h1>
+
+
+<div class="card">
+
+    <div class="search">
+        <input type="text"  placeholder="Enter a city name" spellcheck="false"/>
+        <button><i class="uil uil-search"></i></button>
+    </div>
+    
+    <div class="weather">
+        <img src="weather-app-img/images/rain.png" class="weather-icon"></img>
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Yangon</h2>
+        <h3 class="country">Myanmar</h3>
+
+        <div class="details">
+
+            <div class="col">
+                <i class="uil uil-raindrops-alt details-icon"></i>
+                <div>
+                    <p class="humidity">50 %</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <i class="uil uil-wind details-icon"></i>
+                <div>
+                    <p class="wind">15 km / h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</div>
+<script src="main.js"></script>
 </body>
 </html>
