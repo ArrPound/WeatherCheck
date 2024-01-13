@@ -31,12 +31,12 @@ body {
         padding: 10px 25px;
         height: 60px;
         border-radius: 30px;
-        flex: 0.8;
         margin-right: 16px;
         font-size: 18px;
     }
 
     .search button {
+        display: none;
         border: 0;
         outline: 0;
         background: none;
@@ -48,14 +48,21 @@ body {
 }
 
 @media screen and (max-width: 560px){
-    .search button {
-        display: none;
-        border: 0;
-        outline: 0;
-        background: none;
-        cursor: pointer;
-        color: #ebfffc;
+
+    .card {
+        width: 85%;
+        max-width: 350px;
+        background: linear-gradient(135deg, #6091e5, #960b0b);
+        color: #fff;
+        margin: 100px auto 0;
+        margin-bottom: 100px;
+        border-radius: 20px;
+        padding: 40px 40px;
+        text-align: center;
     }
+
+
+
 }
 
 .card {
